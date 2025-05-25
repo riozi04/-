@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/books") // URL 관례상 복수형이 일반적
+@RequestMapping("/books")
 public class BookController {
 
     private final BookService bookService;
@@ -37,7 +37,7 @@ public class BookController {
     // Update - 책 정보 수정
     @PutMapping("/{id}")
     public BookDto updateBook(@PathVariable Long id, @RequestBody BookDto bookRequest) {
-        return bookService.updateBook(id, bookRequest); // 🔧 수정된 부분
+        return bookService.updateBook(id, bookRequest); 
     }
 
     // Delete - 책 삭제
