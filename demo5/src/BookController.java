@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/books") // URL 관례상 복수형이 일반적
+@RequestMapping("/books") 
 public class BookController {
 
     private final BookService bookService;
