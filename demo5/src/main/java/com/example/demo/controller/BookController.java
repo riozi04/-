@@ -37,7 +37,7 @@ public class BookController {
     // Update - 책 정보 수정
     @PutMapping("/{id}")
     public BookDto updateBook(@PathVariable Long id, @RequestBody BookDto bookRequest) {
-        return bookService.updateBook(id, bookRequest); // 🔧 수정된 부분
+        return bookService.updateBook(id, bookRequest);
     }
 
     // Delete - 책 삭제
